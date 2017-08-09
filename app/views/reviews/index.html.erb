@@ -1,0 +1,9 @@
+<h1>Reviews</h1>
+
+<% @reviews.each do |review| %>
+<div class= entry_review>
+  <h3><%= review.restaurant.name %></h3>
+  <h4><%= review.content %></h4>
+  <h5><%= review.rating %>/5</h5>
+</div>
+<% end %>
